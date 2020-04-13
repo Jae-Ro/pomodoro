@@ -1,0 +1,38 @@
+.inner-header {
+    .logo {
+        flex-grow: 1;
+        a {
+            font-weight: 700;
+            text-decoration: none;
+            // letter-spacing: 1.25px;
+            color: #F8624E;
+            font-size: 1.25rem;
+
+        }
+    }
+    .navigation {
+        a {
+            margin: 0 20px;
+            font-size: 0.9rem;
+            // letter-spacing: 1.5px;
+            // text-transform: uppercase;
+            text-align: None;
+            color: black;
+            text-decoration: none;
+            font-weight: 450;
+        }
+    }
+}
+
+.toggle-drawer {
+    a {
+        margin: 0 20px;
+        font-size: 1rem;
+        // letter-spacing: 1.5px;
+        // text-transform: uppercase;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+    }
+
+}

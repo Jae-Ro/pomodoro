@@ -1,0 +1,27 @@
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+
+
+    &__toolbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        font-size: 0.85rem;
+        
+        &--text {
+            text-align: center;
+            font-size: small;
+            vertical-align: auto;
+            font-size: 0.5rem;
+        }
+    }
+    .main-icon-footer {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+}
