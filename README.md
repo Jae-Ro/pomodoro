@@ -31,7 +31,7 @@ please run:
 Within this file, add the following:
 REACT_APP_API_URL = "http://127.0.0.1:8000/"
 
-### `npm run start:server`
+### `npm run start:dev`
 
 Runs the app in the development mode with the backend running locally.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
