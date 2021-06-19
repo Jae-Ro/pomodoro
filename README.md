@@ -1,5 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![alt text](/case_study/Timer%20Start.png)
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## How to Run Pomodoro App - Backend
 In the project directory 'backend', do the following:
@@ -45,6 +46,7 @@ Please use the following paths to access different things in the app:
  - http://localhost:3000 - Login page (to login as an admin type "Admin" into the email field)
  - http://localhost:3000/app/admin - Admin dashboard (for adding, editing, deleting Users)
  - http://localhost:3000/app/user - User dashboard (for adding, editing, deleting Projects)
+ - 
 
 
 
