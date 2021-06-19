@@ -1,5 +1,3 @@
-![alt text](/case_study/Timer%20Start.png)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## How to Run Pomodoro App - Backend
@@ -49,7 +47,7 @@ Please use the following paths to access different things in the app:
  - 
 
 
-
+![alt text](/case_study/Timer%20Start.png)
 ------------------------------------------------
 ## Optional Commands
 
