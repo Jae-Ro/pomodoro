@@ -2,16 +2,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## How to Run Pomodoro App - Backend
-In the project directory 'PTTBackend4', do the following:
+In the project directory 'backend', do the following:
 
 Firstly, install [python3](https://www.python.org/downloads/)
 Then install [pip3](https://pip.pypa.io/en/stable/) for python 3
 
 Then use the following commands to setup the server:
 
-1. `cd PTTBackend4/src`
+1. `cd backend/src`
 2. `pip3 install -r requirements.txt`
-3. `cd Backend4`
+3. `cd backend`
 4. `bash cleandb.sh`
 
 Use the following command to run the server:
@@ -21,13 +21,13 @@ This will run the server on `http://127.0.0.1:8000/`
 
 ## How to Run Pomodoro App - Frontend
 
-In the project directory 'PTTWeb4', you can run:
+In the project directory 'frontend', you can run:
 
 ### `npm install` 
 This will download all necessary dependencies. Once that is finished, 
 please run:
 
-### Create a `.env.staging` file in the root of the PTTWeb4 folder
+### Create a `.env.staging` file in the root of the frontend folder
 Within this file, add the following:
 REACT_APP_API_URL = "http://127.0.0.1:8000/"
 
@@ -80,7 +80,7 @@ Watch Usage
  › Press Enter to trigger a test run.
 ```
 simply type the letter 'a' on your keyboard, and it should run all the tests in the __test__ directory.<br /> 
-Tests can be found under <dir>/PTTWeb4/src/components/__test__/<br />
+Tests can be found under <dir>/frontend/src/components/__test__/<br />
 
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 

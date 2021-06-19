@@ -1,0 +1,99 @@
+apply plugin: 'java'
+// apply plugin: 'eclipse'
+// apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.apache.httpcomponents:httpclient:4.5.5")
+    compile("org.skyscreamer:jsonassert:1.5.0")
+    testCompile('junit:junit:4.12')
+    compile('com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.3')
+}
+
+//create a single Jar for test files with all dependencies
+task testJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Test Jar File',
+                   'Implementation-Version': '1.0.0'
+    }
+    baseName = 'backend'
+    from { configurations.testRuntime.collect { it.isDirectory() ? it : zipTree(it) } }
+    from sourceSets.test.output
+    with jar
+}
+
+task BackendTests(type: Test) {
+    filter {
+      includeTestsMatching "backend.*"
+    }
+}
+// task BackendTestsBackend1(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Backend1.*"
+//     }
+// }
+
+// task BackendTestsBackend2(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Backend2.*"
+//     }
+// }
+
+// task BackendTestsBackend3(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Backend3.*"
+//     }
+// }
+
+// task BackendTestsBackend4(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Backend4.*"
+//     }
+// }
+
+
+// task BackendTestsMobile1(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Mobile1.*"
+//     }
+// }
+
+// task BackendTestsMobile3(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Mobile3.*"
+//     }
+// }
+
+// task BackendTestsWeb1(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Web1.*"
+//     }
+// }
+
+// task BackendTestsWeb2(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Web2.*"
+//     }
+// }
+
+// task BackendTestsWeb4(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.Web4.*"
+//     }
+// }
+
+// task BackendTestsDevOps12(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.DevOps12.*"
+//     }
+// }
+
+// task BackendTestsDevOps34(type: Test) {
+//     filter {
+//       includeTestsMatching "edu.gatech.cs6301.DevOps34.*"
+//     }
+// }
+
