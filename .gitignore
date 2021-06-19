@@ -1,3 +1,4 @@
 TechnologyReport.pdf
 node_modules/
 backend/src/test/
+.DS_Store
